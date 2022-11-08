@@ -1,22 +1,54 @@
+.otrodiv{
+    margin: 0px 980px;
+    font-size: 24px;
+    text-shadow: 4px -1px 2px rgb(78, 78, 78);
+}
 input{
-    margin:0px 550px;
+    margin:0px 500px;
+    margin:0px 1030px;
+    /* background: #f00; */
 }
 input[type="submit"]{
     display: block;
-    margin:     5px 600px;
+    margin-top: 10px;
+    margin: 15px 1080px;
 }
 body{
-    background-color: rgb(100, 100, 109);
+   
+    background-color: rgb(124, 0, 0);
 }
-h1{
-    background-color: red ;
-    border:   outset 10px blueviolet;
+h3{
+    border: solid;
+    background-color: rgb(235, 34, 34);
+    padding: 10px;
+    margin: 10px;  
 }
-div ,[p]{
-    margin: 0px 550px;
-    background-color: brown;
-    border: solid  10px ;
-    max-width: 50px;
-    padding: 5px 85px 5px 10px;
-    font-size: 30px;
+table {
+    margin: 0px 659px ;
+
+
+
+}
+
+
+
+table thead tr th {
+    border: solid black  ;
+    background-color: rgb(173, 0, 121);
+    font-size:20px;
+    padding: 10px 50px 10px;
+    font-size: 16px;
+    border-spacing: 10px;
+
+}
+table tbody tr td {
+    border:solid black;
+
+    text-align: center;
+}
+table tbody tr:nth-child(even) td {
+    background-color: rgb(122, 118, 239);
+}
+table tbody tr:nth-child(odd) td{
+    background-color: rgb(211, 71, 183);
 }
