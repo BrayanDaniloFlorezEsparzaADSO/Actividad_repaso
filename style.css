@@ -1,23 +1,56 @@
-body{
-    background-color: rgb(148, 56, 56);
-}
-.h2{
-    border: solid red;
-    background: chocolate;
-    font-size: 30px;
-}
 h1{
-    margin-left:  900px;
     font-size: 50px;
-    text-shadow: 4px -3px 2px red;
+    text-align: center;
+    margin-bottom:0px ;
+    text-shadow:1px -3px 3px red ;
 }
-form{
-    margin-left: 900px;
+
+input{
+    
+    margin:5px 1030px;
+    /* background: #f00; */
+}
+input[type="submit"]{
+    display: block;
+    margin-top: 10px;
+    margin: 15px 1080px;
+}
+body{
+   
+    background-color: rgb(124, 0, 0);
+}
+h2{
+    border: solid;
+    background-color: rgb(235, 34, 34);
+    padding: 10px;
+    margin: 10px;  
+}
+table {
+    margin: 0px 659px ;
+
+
 
 }
-div{
-    border: solid red;
-    height: auto;
-    background: rgb(244, 248, 16);
-    margin: 19px 930px; ;
+
+
+
+table thead tr th {
+    border: solid black  ;
+    background-color: rgb(173, 0, 121);
+    font-size:20px;
+    padding: 10px 50px 10px;
+    font-size: 16px;
+    border-spacing: 10px;
+
+}
+table tbody tr td {
+    border:solid black;
+
+    text-align: center;
+}
+table tbody tr:nth-child(even) td {
+    background-color: rgb(122, 118, 239);
+}
+table tbody tr:nth-child(odd) td{
+    background-color: rgb(211, 71, 183);
 }
