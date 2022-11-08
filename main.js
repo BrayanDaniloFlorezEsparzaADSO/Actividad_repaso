@@ -1,26 +1,30 @@
 addEventListener("DOMContentLoaded", (e)=>{
-    let hor2=document.querySelector('#elint')
-    let cont=1
-    hor2.addEventListener("submit",(e)=>{
-        e.preventDefault();
-        if (cont<=50) {       
-        
-        let datosEntrada = Object.fromEntries(new FormData(e.target))
-        
-            let hor = datosEntrada.nhoras
-            let valh=5208.33
-            let pgh= valh*hor
-            
-            let tabla=document.querySelector("tbody");
-            tabla.insertAdjacentHTML("beforeend",`
-                <tr>
-                    <td>${cont}</td>
-                    <td>${hor}</td>
-                    <td>${valh} </td>
-                    <td>${pgh} </td>
-                </tr>
-                `)
-            cont++
+let n = document.querySelector("N")
+let res = ""
+let numeros = document.querySelector("#numeros")
+let suma = 0
+let rta= document.querySelector("#resultados")
+    
+numeros.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let datosEntrada = Object.fromEntries(new FormData(e.target));
+    for (let s = 1; s < datosEntrada.N; s++){
+         if(datosEntrada.N % s == 0){
+            suma+=s
         }
-    })    
+    }
+    if(datosEntrada.N == suma){
+        res = "Es perfecto"
+        suma = 0
+    }
+    else{
+        res = "No es perfecto"
+        suma = 0
+    }
+    rta.innerHTML = ""
+    rta.insertAdjacentHTML("beforeend",`
+    <h2> ${datosEntrada.N + ' ' + res} </h2>
+    `);
+    })
 })
+
